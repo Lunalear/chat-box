@@ -5,7 +5,7 @@ app.get('/',(req,res)=>{
     res.sendFile(__dirname+'/index.html');
 });
 
-const server = app.listen(4000,()=>{
+const server = app.listen(process.env.PORT||4000,()=>{
     console.log('Server on port 4000');
 });
 
