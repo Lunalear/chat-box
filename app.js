@@ -5,8 +5,8 @@ app.get('/',(req,res)=>{
     res.sendFile(__dirname+'/index.html');
 });
 
-const server = app.listen(3000,()=>{
-    console.log('Server on port 3000');
+const server = app.listen(4000,()=>{
+    console.log('Server on port 4000');
 });
 
 const io = socketio(server);
